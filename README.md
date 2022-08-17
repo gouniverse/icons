@@ -20,7 +20,22 @@ The following icons are included:
 
 ## Usage
 
+
+- Use as Tag
+
+```go
+iconTag := Icon("bi-globe", 120, 120, "white")
 ```
+
+- Use as HTML
+
+```go
+iconHtml := Icon("bi-globe", 120, 120, "white").ToHTML()
+```
+
+- Use as String (DEPRECATED)
+
+```go
 log.Println(icons.BootstrapMusicNote)
 ```
 
