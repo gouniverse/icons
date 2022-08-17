@@ -1,4 +1,4 @@
-module icons
+module github.com/gouniverse/icons
 
 go 1.19
 
