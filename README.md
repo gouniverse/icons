@@ -2,7 +2,7 @@
 
 The following icons are included:
 
-- Bootstrap 1.2.2 
+- Bootstrap 1.9.0 
 
   website: https://icons.getbootstrap.com/
   
@@ -10,7 +10,7 @@ The following icons are included:
   
   license: MIT
   
-- Boxicon 2.0.7 
+- Boxicon 2.0.7
 
   website: https://boxicons.com/
   
