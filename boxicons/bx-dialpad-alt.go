@@ -1,0 +1,3 @@
+package boxicons
+
+const BxDialpadAlt = ``

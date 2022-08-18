@@ -18,16 +18,29 @@ func Icon(iconName string, width int, height int, color string) *hb.Tag {
 
 	if strings.HasPrefix(className, "bi-") {
 		className = "bi " + className
+		svg := hb.NewTag("svg").
+			Class(className).
+			Attr("xmlns", "http://www.w3.org/2000/svg").
+			Attr("width", utils.ToString(width)).
+			Attr("height", utils.ToString(height)).
+			Attr("fill", color).
+			Attr("viewBox", "0 0 16 16").
+			HTML(svgContent)
+		return svg
 	}
 
-	svg := hb.NewTag("svg").
-		Class(className).
-		Attr("xmlns", "http://www.w3.org/2000/svg").
-		Attr("width", utils.ToString(width)).
-		Attr("height", utils.ToString(height)).
-		Attr("fill", color).
-		Attr("viewBox", "0 0 16 16").
-		HTML(svgContent)
+	if strings.HasPrefix(className, "bx-") || strings.HasPrefix(className, "bxs-") || strings.HasPrefix(className, "bxl-") {
+		className = "bx " + className
+		svg := hb.NewTag("svg").
+			Class(className).
+			Attr("xmlns", "http://www.w3.org/2000/svg").
+			Attr("width", utils.ToString(width)).
+			Attr("height", utils.ToString(height)).
+			Attr("fill", color).
+			//Attr("viewBox", "0 0 24 24").
+			HTML(svgContent)
+		return svg
+	}
 
-	return svg
+	return hb.NewTag("svg").Class($cclassName+" notfound")
 }
