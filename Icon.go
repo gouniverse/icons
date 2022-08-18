@@ -42,5 +42,5 @@ func Icon(iconName string, width int, height int, color string) *hb.Tag {
 		return svg
 	}
 
-	return hb.NewTag("svg").Class($cclassName+" notfound")
+	return hb.NewTag("svg").Class(className + " notfound")
 }
