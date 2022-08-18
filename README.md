@@ -10,7 +10,7 @@ The following icons are included:
   
   license: MIT
   
-- Boxicon 2.0.7
+- Boxicon 2.1.2
 
   website: https://boxicons.com/
   
