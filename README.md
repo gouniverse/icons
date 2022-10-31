@@ -17,11 +17,17 @@ The following icons are included:
   source: https://github.com/atisawd/boxicons 
   
   license: MIT
+  
+## Installation
+
+```
+go get github.com/gouniverse/icons
+```
 
 ## Usage
 
 
-- Use as Tag
+- Use as HB Tag
 
 ```go
 iconTag := Icon("bi-globe", 120, 120, "white")
