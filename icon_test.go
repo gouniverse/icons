@@ -6,7 +6,7 @@ import (
 )
 
 func TestIcon(t *testing.T) {
-	iconHtml := Icon("bi-globe", 120, 120, "white").ToHTML()
+	iconHtml := Icon("bi-globe", 120, 120, "white")
 
 	if !strings.Contains(iconHtml, `class="bi bi-globe"`) {
 		t.Errorf("Icon does not return expected result 'class=\"bi bi-globe\"', but '%s'", iconHtml)
@@ -34,7 +34,7 @@ func TestIcon(t *testing.T) {
 }
 
 func TestIconBoxicon(t *testing.T) {
-	iconHtml := Icon("bxs-color", 120, 120, "white").ToHTML()
+	iconHtml := Icon("bxs-color", 120, 120, "white")
 
 	if !strings.Contains(iconHtml, `class="bx bxs-color"`) {
 		t.Errorf("Icon does not return expected result 'class=\"bx bxs-color\"', but '%s'", iconHtml)

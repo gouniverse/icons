@@ -1,13 +1,12 @@
 package icons
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
-
-	"github.com/dracory/hb"
 )
 
-func Icon(iconName string, width int, height int, color string) *hb.Tag {
+func Icon(iconName string, width int, height int, color string) string {
 	if color == "" {
 		color = "currentColor"
 	}
@@ -18,29 +17,15 @@ func Icon(iconName string, width int, height int, color string) *hb.Tag {
 
 	if strings.HasPrefix(className, "bi-") {
 		className = "bi " + className
-		svg := hb.NewTag("svg").
-			Class(className).
-			Attr("xmlns", "http://www.w3.org/2000/svg").
-			Attr("width", strconv.Itoa(width)).
-			Attr("height", strconv.Itoa(height)).
-			Attr("fill", color).
-			Attr("viewBox", "0 0 16 16").
-			HTML(svgContent)
-		return svg
+		return fmt.Sprintf(`<svg class="%s" xmlns="http://www.w3.org/2000/svg" width="%s" height="%s" fill="%s" viewBox="0 0 16 16" style="display: inline-block; vertical-align: -.125em;">%s</svg>`,
+			className, strconv.Itoa(width), strconv.Itoa(height), color, svgContent)
 	}
 
 	if strings.HasPrefix(className, "bx-") || strings.HasPrefix(className, "bxs-") || strings.HasPrefix(className, "bxl-") {
 		className = "bx " + className
-		svg := hb.NewTag("svg").
-			Class(className).
-			Attr("xmlns", "http://www.w3.org/2000/svg").
-			Attr("width", strconv.Itoa(width)).
-			Attr("height", strconv.Itoa(height)).
-			Attr("fill", color).
-			//Attr("viewBox", "0 0 24 24").
-			HTML(svgContent)
-		return svg
+		return fmt.Sprintf(`<svg class="%s" xmlns="http://www.w3.org/2000/svg" width="%s" height="%s" fill="%s" viewBox="0 0 24 24" style="display: inline-block; vertical-align: middle;">%s</svg>`,
+			className, strconv.Itoa(width), strconv.Itoa(height), color, svgContent)
 	}
 
-	return hb.NewTag("svg").Class(className + " notfound")
+	return fmt.Sprintf(`<svg class="%s notfound"></svg>`, className)
 }
