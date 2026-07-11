@@ -1,0 +1,3 @@
+package boxicons
+
+const BxsBxsObjectsVerticalTop = `<path d="M2 2h20v2H2z"/><rect x="5" y="6" width="6" height="16" rx="1"/><rect x="13" y="6" width="6" height="12" rx="1"/>`

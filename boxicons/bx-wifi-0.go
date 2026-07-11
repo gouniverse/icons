@@ -1,3 +1,0 @@
-package boxicons
-
-const BxWifiZero = ``
