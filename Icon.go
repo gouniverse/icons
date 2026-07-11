@@ -3,7 +3,7 @@ package icons
 import (
 	"strings"
 
-	"github.com/gouniverse/hb"
+	"github.com/dracory/hb"
 	"github.com/gouniverse/utils"
 )
 

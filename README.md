@@ -2,7 +2,7 @@
 
 The following icons are included:
 
-- Bootstrap 1.9.0 
+- Bootstrap 1.13.1 
 
   website: https://icons.getbootstrap.com/
   

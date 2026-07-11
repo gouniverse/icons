@@ -1,9 +1,9 @@
 module github.com/gouniverse/icons
 
-go 1.22.4
+go 1.26.3
 
 require (
-	github.com/gouniverse/hb v1.73.3
+	github.com/dracory/hb v1.88.0
 	github.com/gouniverse/utils v1.39.2
 )
 
@@ -22,10 +22,10 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mingrammer/cfmt v1.1.0 // indirect
 	github.com/samber/lo v1.39.0 // indirect
-	golang.org/x/crypto v0.25.0 // indirect
+	golang.org/x/crypto v0.39.0 // indirect
 	golang.org/x/exp v0.0.0-20240506185415-9bf2ced13842 // indirect
-	golang.org/x/net v0.27.0 // indirect
-	golang.org/x/sys v0.22.0 // indirect
-	golang.org/x/term v0.22.0 // indirect
-	golang.org/x/text v0.16.0 // indirect
+	golang.org/x/net v0.41.0 // indirect
+	golang.org/x/sys v0.33.0 // indirect
+	golang.org/x/term v0.32.0 // indirect
+	golang.org/x/text v0.26.0 // indirect
 )
