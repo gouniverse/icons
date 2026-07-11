@@ -1,10 +1,10 @@
 package icons
 
 import (
+	"strconv"
 	"strings"
 
 	"github.com/dracory/hb"
-	"github.com/gouniverse/utils"
 )
 
 func Icon(iconName string, width int, height int, color string) *hb.Tag {
@@ -21,8 +21,8 @@ func Icon(iconName string, width int, height int, color string) *hb.Tag {
 		svg := hb.NewTag("svg").
 			Class(className).
 			Attr("xmlns", "http://www.w3.org/2000/svg").
-			Attr("width", utils.ToString(width)).
-			Attr("height", utils.ToString(height)).
+			Attr("width", strconv.Itoa(width)).
+			Attr("height", strconv.Itoa(height)).
 			Attr("fill", color).
 			Attr("viewBox", "0 0 16 16").
 			HTML(svgContent)
@@ -34,8 +34,8 @@ func Icon(iconName string, width int, height int, color string) *hb.Tag {
 		svg := hb.NewTag("svg").
 			Class(className).
 			Attr("xmlns", "http://www.w3.org/2000/svg").
-			Attr("width", utils.ToString(width)).
-			Attr("height", utils.ToString(height)).
+			Attr("width", strconv.Itoa(width)).
+			Attr("height", strconv.Itoa(height)).
 			Attr("fill", color).
 			//Attr("viewBox", "0 0 24 24").
 			HTML(svgContent)
