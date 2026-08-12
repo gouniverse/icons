@@ -1,6 +1,6 @@
 package icons
 
-import "github.com/gouniverse/icons/bootstrap"
+import "github.com/dracory/icons/bootstrap"
 
 var bootstrapMap = map[string]string{
 	"bi-0-circle-fill":                 bootstrap.ZeroCircleFill,

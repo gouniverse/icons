@@ -1,6 +1,6 @@
 package icons
 
-import "github.com/gouniverse/icons/boxicons"
+import "github.com/dracory/icons/boxicons"
 
 var boxiconsMap = map[string]string{
 	"bx-bx-abacus":                      boxicons.BxBxAbacus,

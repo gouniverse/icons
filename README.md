@@ -21,7 +21,7 @@ The following icons are included:
 ## Installation
 
 ```
-go get github.com/gouniverse/icons
+go get github.com/dracory/icons
 ```
 
 ## Usage
